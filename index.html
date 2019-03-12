@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Guess guess guess!</title>
+        <link rel="stylesheet" href="/assets/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <div class="crystals"></div>
+
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div class="alert alert-dark" role="alert" id="crystalscore" style="display:none">
+                        <strong>New Score</strong>
+                        <span id="newscore"> </span>
+                    </div>
+
+                    <div class="alert alert-success" role="alert" id="crystalwin" style="display:none"><strong>Nice win
+                            home slice!</strong>
+                        <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="winclose">
+                            <span aria-hidden="true" id="winclose">&times;</span> -->
+                    </div>
+
+                    <div class="alert alert-danger" role="alert" id="crystallose" style="display:none"><strong>Dang, you
+                            lost. Its just math, man.</strong>
+                        <!-- <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="loseclose">
+                            <span aria-hidden="true">&times;</span> -->
+                    </div>
+                </div>
+                <div class="fixed-bottom">
+                    <h2 class="wins" id="wins"></h2>
+
+                    <h2 class="losses" id="loss"></h2>
+                    <div class="col-sm-2"></div>
+                    <h1 class="display-3">Make this number: <span id="numguess"></span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="card float-right" style="width: 18rem;">
+            <div class="card-body" id="card">
+                Each crystal has an unknown value. Click on the crystals to reveal their values, and make the number
+                shown!
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="assets\game.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+            integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+            integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+            integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+            integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
